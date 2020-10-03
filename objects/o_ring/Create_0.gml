@@ -58,5 +58,7 @@ changeSize = function(amt) {
 }
 
 addScore = function(amt) {
-   plrScore += amt * plrMult  
+   var scoreChange = amt * plrMult  
+   plrScore += scoreChange
+   return scoreChange
 }

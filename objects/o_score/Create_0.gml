@@ -6,5 +6,7 @@ fontSize	= 50
 centered	= true
 hoverable	= false
 
+dispScore = 0
+
 var obj = instance_create_layer(x, y, "gui", o_mult)
 obj.sibling = id

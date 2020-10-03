@@ -14,6 +14,6 @@ posDir[1] += smoothVar(posDir[1], 0, 0.4)
 #endregion
 // ---------------------------------------------------------------------------------------------------
 
-if (ref_center.ring.circleSize * room_width < pos[0]) {
+if ((ref_center.ring.circleSize * room_width) + 50 < pos[0]) {
    instance_destroy()  
 }
