@@ -7,7 +7,7 @@ function startup(){
 	global.savResolution = 3;
 	global._fps = 3;
 	global.fullscreen = false;
-	global.interpolation = true;
+	global.interpolation = false;
 
 	var optionsFound = file_exists("options.sav");
 

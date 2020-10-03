@@ -1,8 +1,6 @@
-spawnEnemy(50, 0, o_enemyBase, id)
-spawnEnemy(150, 0, o_enemyBase, id)
-spawnEnemy(250, 0, o_enemyBase, id)
-spawnEnemy(350, 0, o_enemyBase, id)
-spawnEnemy(450, 0, o_enemyBase, id)
+for (var i = 0; i < 100; i++) {
+   spawnEnemy(random(250), random(2 * pi), o_enemyBase, id)
+}
 
 // ---------------------------------------------------------------------------------------------------
 #region Rotation Vars
@@ -16,8 +14,8 @@ rotVel = 0
 
 rotate = function(clockwise) {
    if (!clockwise) {
-      rotVel += global.second * 5
+      rotVel += global.second * 15
    } else {
-      rotVel -= global.second * 5
+      rotVel -= global.second * 15
    }
 }

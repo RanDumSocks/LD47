@@ -1,5 +1,9 @@
 if (keyboard_check(ord("W"))) {
-   ring.changeSize(-global.second / 30)
+   ring.changeSize(-global.second / 15)
+} else if (keyboard_check(ord("S"))) {
+   ring.changeSize(global.second / 15)
+} else {
+   ring.changeSize(0)
 }
 
 if (keyboard_check(ord("D"))) {

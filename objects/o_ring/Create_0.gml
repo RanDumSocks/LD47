@@ -5,6 +5,7 @@
 ringSurf	= surface_create(room_width, room_height)
 
 circleSize     = 1
+circleSizeDt   = 0
 
 lineWidth      = 0.004
 defaultColor   = [255, 255, 255]		// READ-ONLY, default grid color
@@ -46,5 +47,6 @@ wob = function(amt) {
 }
 
 changeSize = function(amt) {
-   circleSize += amt
+   circleSizeDt += smoothVar(circleSizeDt, amt, 0.2)
+   circleSize += circleSizeDt
 }

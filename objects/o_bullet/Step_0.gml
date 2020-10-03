@@ -1,4 +1,4 @@
-y -= global.second * speedMult * 300
+y -= (global.second * speedMult * 300) + 20
 speedMult += global.second * 15
 
 // ---------------------------------------------------------------------------------------------------
@@ -7,7 +7,7 @@ speedMult += global.second * 15
 
 movementDirection = point_direction(xPrev * 5, yPrev * 5, x * 5, y * 5)
 blurDirection = degtorad(360 - movementDirection)
-blurAmount = point_distance(xPrev, yPrev, x, y)
+blurAmount = point_distance(xPrev, yPrev, x, y) * 1.5
 
 xPrev = x
 yPrev = y
@@ -30,7 +30,7 @@ glowAlpha = 1;
 #region Murder
 // ---------------------------------------------------------------------------------------------------
 
-if (y + sprite_height < ring.ref_center.y) {
+if (y + sprite_height < (-2 * (room_height - ring.ref_center.y)) + room_height) {
    instance_destroy()
 }
 
