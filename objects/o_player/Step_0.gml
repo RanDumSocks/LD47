@@ -1,6 +1,8 @@
 if (keyboard_check(ord("W"))) {
    ring.changeSize(-global.second / 15)
-   ring.addScore(global.second * 5)
+   if (ring.circleSize > 0) {
+      ring.addScore(global.second * 5)
+   }
 } else {
    ring.changeSize(0)
 }
