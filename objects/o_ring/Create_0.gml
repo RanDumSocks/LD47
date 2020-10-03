@@ -4,7 +4,7 @@
 
 ringSurf	= surface_create(room_width, room_height)
 
-circleSize     = 0.5
+circleSize     = 1
 
 lineWidth      = 0.004
 defaultColor   = [255, 255, 255]		// READ-ONLY, default grid color
@@ -15,7 +15,11 @@ origin         = [0.5, 3.5]
 surfTex        = surface_get_texture(ringSurf)
 uvs            = texture_get_uvs(surfTex)
 
+ref_player = instance_create_layer(0, 0, "Instances", o_player)
+ref_player.ring = id
 
+ref_center = instance_create_layer(0, 0, "Instances", o_center)
+ref_center.ring = id
 
 #endregion
 // ---------------------------------------------------------------------------------------------------
@@ -39,4 +43,8 @@ uni_period		 = shader_get_uniform(sdr_ring, "period")
 
 wob = function(amt) {
    wobble += amt
+}
+
+changeSize = function(amt) {
+   circleSize += amt
 }

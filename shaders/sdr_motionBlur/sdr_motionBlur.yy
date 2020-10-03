@@ -5,7 +5,7 @@
     "path": "folders/shaders.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sdr_motionsBlur",
+  "name": "sdr_motionBlur",
   "tags": [],
   "resourceType": "GMShader",
 }

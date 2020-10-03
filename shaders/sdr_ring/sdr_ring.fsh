@@ -36,7 +36,7 @@ void main() {
    gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
    
    vec2 uv = vec2((v_vTexcoord.x - spriteUV[0]) / (spriteUV[2] - spriteUV[0]),
-                  ((v_vTexcoord.y - spriteUV[3]) / (spriteUV[1] - spriteUV[3]) / ratio) + 0.25);
+                  ((v_vTexcoord.y - spriteUV[3]) / (spriteUV[1] - spriteUV[3])));
    
    float amp = (-abs(uv.x - 0.5) + 0.25);
    if (amp < 0.) { amp = 0.; }

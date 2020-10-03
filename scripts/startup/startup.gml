@@ -7,7 +7,7 @@ function startup(){
 	global.savResolution = 3;
 	global._fps = 3;
 	global.fullscreen = false;
-	global.interpolation = false;
+	global.interpolation = true;
 
 	var optionsFound = file_exists("options.sav");
 
@@ -21,35 +21,8 @@ function startup(){
 		global.interpolation = wrapper[? "interpolation"];
 	
 		// decode resolution indexes
-		if (global.savResolution == undefined || global.savResolution > 5) {
-			global.savResolution = 5;
-		}
-		switch (global.savResolution) {
-			case 0:
-				var resolution = 576;
-				var ratio = 16 / 9;
-				break;
-			case 1:
-				var resolution = 648;
-				var ratio = 16 / 9;
-				break;
-			case 2:
-				var resolution = 720;
-				var ratio = 16 / 9;
-				break;
-			case 3:
-				var resolution = 768;
-				var ratio = 16 / 9;
-				break;
-			case 4:
-				var resolution = 900;
-				var ratio = 16 / 9;
-				break;
-			case 5:
-				var resolution = 1080;
-				var ratio = 16 / 9;
-				break;
-		}
+		var resolution = 750;
+		var ratio = 1;
 	
 		// decode FPS values
 		if (global._fps == undefined) {
@@ -99,8 +72,8 @@ function startup(){
 	if (!optionsFound) {
 		var frames = 144;		   // FPS
 		global._fpsReal = 144;
-		var resolution = 720;	// height of window in pixels
-		var ratio = 0;			   // aspect ratio; 0 for native ratio
+		var resolution = 750;	// height of window in pixels
+		var ratio = 1;			   // aspect ratio; 0 for native ratio
 	}
 	var interpolation = global.interpolation;
 	var fullscreen = global.fullscreen;		// fullscreen option
