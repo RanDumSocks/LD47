@@ -21,7 +21,7 @@ function startup(){
 		global.interpolation = wrapper[? "interpolation"];
 	
 		// decode resolution indexes
-		var resolution = 750;
+		var resolution = 800;
 		var ratio = 1;
 	
 		// decode FPS values
@@ -72,7 +72,7 @@ function startup(){
 	if (!optionsFound) {
 		var frames = 144;		   // FPS
 		global._fpsReal = 144;
-		var resolution = 750;	// height of window in pixels
+		var resolution = 800;	// height of window in pixels
 		var ratio = 1;			   // aspect ratio; 0 for native ratio
 	}
 	var interpolation = global.interpolation;

@@ -14,6 +14,7 @@
     {"id":{"name":"f_sqair","path":"fonts/f_sqair/f_sqair.yy",},"order":0,},
     {"id":{"name":"sp_target","path":"sprites/sp_target/sp_target.yy",},"order":1,},
     {"id":{"name":"startup","path":"scripts/startup/startup.yy",},"order":1,},
+    {"id":{"name":"o_mult","path":"objects/o_mult/o_mult.yy",},"order":1,},
     {"id":{"name":"sp_eye","path":"sprites/sp_eye/sp_eye.yy",},"order":4,},
     {"id":{"name":"oc_gridSelector","path":"objects/oc_gridSelector/oc_gridSelector.yy",},"order":2,},
     {"id":{"name":"o_score","path":"objects/o_score/o_score.yy",},"order":0,},

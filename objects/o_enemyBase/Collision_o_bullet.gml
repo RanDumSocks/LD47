@@ -1,5 +1,7 @@
 instance_destroy()
 instance_destroy(other)
+o_ring.addScore(points)
+
  /*
 with (o_enemyBase) {
    var dist = distance_to_point(other.x, other.y)

@@ -4,6 +4,9 @@
 
 ringSurf	= surface_create(room_width, room_height)
 
+plrScore = 0
+plrMult = 1
+
 circleSize     = 1
 circleSizeDt   = 0
 
@@ -23,7 +26,7 @@ ref_center = instance_create_layer(0, 0, "Instances", o_center)
 ref_center.ring = id
 
 instance_create_layer(0, 0, "Instances", oc_gridSelector)
-instance_create_layer(0, 0, "Instances", o_score)
+instance_create_layer(0, 0, "gui", o_score)
 
 #endregion
 // ---------------------------------------------------------------------------------------------------
@@ -52,4 +55,8 @@ wob = function(amt) {
 changeSize = function(amt) {
    circleSizeDt += smoothVar(circleSizeDt, amt, 0.2)
    circleSize += circleSizeDt
+}
+
+addScore = function(amt) {
+   plrScore += amt * plrMult  
 }

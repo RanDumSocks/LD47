@@ -62,14 +62,10 @@ if (hoverable) {
 						   draw_y + stringHeight - centerAdj_y - bbox_y)) {
 		oc_gridSelector.customColor = gridColor;
 		oc_gridSelector.hovering	= true;
-		oc_gridSelector.point1		= [draw_x - gridPadding - centerAdj_x -
-										 camera_get_view_x(view_camera[0]) + bbox_x,
-									   draw_y - gridPadding - centerAdj_y -
-									     camera_get_view_y(view_camera[0]) + bbox_y];
-		oc_gridSelector.point2		= [draw_x + stringWidth + gridPadding - centerAdj_x -
-										 camera_get_view_x(view_camera[0]) - bbox_x,
-									   draw_y + stringHeight + gridPadding - centerAdj_y -
-									     camera_get_view_y(view_camera[0]) - bbox_y];
+		oc_gridSelector.point1		= [(draw_x - gridPadding - centerAdj_x + bbox_x) * (800/400),
+									   (draw_y - gridPadding - centerAdj_y + bbox_y) * (800/400)];
+		oc_gridSelector.point2		= [(draw_x + stringWidth + gridPadding - centerAdj_x - bbox_x) * (800/400),
+									   (draw_y + stringHeight + gridPadding - centerAdj_y - bbox_y) * (800/400)];
 		mouseIn = true;
 	} else if (mouseIn) {
 		oc_gridSelector.customColor = oc_gridSelector.defaultColor;
