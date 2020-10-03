@@ -38,9 +38,9 @@ void main() {
    vec2 uv = vec2((v_vTexcoord.x - spriteUV[0]) / (spriteUV[2] - spriteUV[0]),
                   ((v_vTexcoord.y - spriteUV[3]) / (spriteUV[1] - spriteUV[3])));
    
-   float amp = (-abs(uv.x - 0.5) + 0.25);
+   float amp = (-abs(uv.x - 0.5) + 0.45);
    if (amp < 0.) { amp = 0.; }
-   float dist = pow(pow(uv.x - origin.x, 2.) + pow(uv.y - origin.y, 2.), 0.5) + (sin((amp * 150.) + period) * wobble * (amp * 16.));
+   float dist = pow(pow(uv.x - origin.x, 2.) + pow(uv.y - origin.y, 2.), 0.5) + (sin((amp * 150.) + period) * wobble * (amp * 32.));
    if (dist > radius - lineWidth && dist < radius + lineWidth) {
       gl_FragColor = vec4(red, green, blue, 1.0);
    }

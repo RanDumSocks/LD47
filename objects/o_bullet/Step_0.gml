@@ -1,5 +1,5 @@
-y -= global.second * room_height * speedMult
-speedMult += global.second * 5
+y -= global.second * speedMult * 300
+speedMult += global.second * 15
 
 // ---------------------------------------------------------------------------------------------------
 #region Calculate Direction
