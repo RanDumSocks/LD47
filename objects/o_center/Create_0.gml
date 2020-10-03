@@ -1,6 +1,10 @@
-for (var i = 0; i < 100; i++) {
+/*for (var i = 0; i < 100; i++) {
    spawnEnemy(random(250), random(2 * pi), o_enemyBase, id)
 }
+
+for (var i = 0; i < 20; i++) {
+   spawnEnemy(random(250), random(2 * pi), o_rotEnem, id)
+}*/
 
 // ---------------------------------------------------------------------------------------------------
 #region Rotation Vars

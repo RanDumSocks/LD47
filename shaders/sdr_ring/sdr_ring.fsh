@@ -43,5 +43,7 @@ void main() {
    float dist = pow(pow(uv.x - origin.x, 2.) + pow(uv.y - origin.y, 2.), 0.5) + (sin((amp * 150.) + period) * wobble * (amp * 32.));
    if (dist > radius - lineWidth && dist < radius + lineWidth) {
       gl_FragColor = vec4(red, green, blue, 1.0);
+   } else if (dist > radius - lineWidth) {
+      gl_FragColor = vec4(0., 0., 0., 1.0);
    }
 }

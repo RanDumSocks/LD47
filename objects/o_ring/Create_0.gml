@@ -22,6 +22,9 @@ ref_player.ring = id
 ref_center = instance_create_layer(0, 0, "Instances", o_center)
 ref_center.ring = id
 
+instance_create_layer(0, 0, "Instances", oc_gridSelector)
+instance_create_layer(0, 0, "Instances", o_score)
+
 #endregion
 // ---------------------------------------------------------------------------------------------------
 
