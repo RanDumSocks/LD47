@@ -2,8 +2,10 @@
   "resources": [
     {"id":{"name":"oi_drawGridText","path":"objects/oi_drawGridText/oi_drawGridText.yy",},"order":0,},
     {"id":{"name":"mus_main","path":"sounds/mus_main/mus_main.yy",},"order":1,},
+    {"id":{"name":"snd_explode","path":"sounds/snd_explode/snd_explode.yy",},"order":1,},
     {"id":{"name":"sdr_gridSelector","path":"shaders/sdr_gridSelector/sdr_gridSelector.yy",},"order":3,},
     {"id":{"name":"o_ring","path":"objects/o_ring/o_ring.yy",},"order":10,},
+    {"id":{"name":"snd_end","path":"sounds/snd_end/snd_end.yy",},"order":2,},
     {"id":{"name":"o_musicController","path":"objects/o_musicController/o_musicController.yy",},"order":11,},
     {"id":{"name":"sdr_ring","path":"shaders/sdr_ring/sdr_ring.yy",},"order":2,},
     {"id":{"name":"mus_intro","path":"sounds/mus_intro/mus_intro.yy",},"order":0,},
@@ -36,6 +38,7 @@
     {"id":{"name":"o_derbis","path":"objects/o_derbis/o_derbis.yy",},"order":0,},
     {"id":{"name":"sp_bullet","path":"sprites/sp_bullet/sp_bullet.yy",},"order":2,},
     {"id":{"name":"o_hole","path":"objects/o_hole/o_hole.yy",},"order":0,},
+    {"id":{"name":"snd_shoot","path":"sounds/snd_shoot/snd_shoot.yy",},"order":0,},
     {"id":{"name":"sp_QED","path":"sprites/sp_QED/sp_QED.yy",},"order":6,},
     {"id":{"name":"util","path":"scripts/util/util.yy",},"order":0,},
   ],
@@ -72,6 +75,7 @@
     {"folderPath":"folders/rooms/game/intro.yy","order":9,"resourceVersion":"1.0","name":"intro","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/audio.yy","order":6,"resourceVersion":"1.0","name":"audio","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/audio/music.yy","order":1,"resourceVersion":"1.0","name":"music","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/audio/sfx.yy","order":2,"resourceVersion":"1.0","name":"sfx","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

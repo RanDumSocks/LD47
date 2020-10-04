@@ -9,6 +9,8 @@ if ((ref_center.ring.circleSize * room_width) > pos[0]) {
    obj.draw_x = x
    obj.draw_y = y
    obj.drawString = floor(change)
+   
+   audio_play_sound(snd_explode, 1, false)
 }
 
  /*

@@ -2,6 +2,7 @@ if ((ref_center.ring.circleSize * room_width) > pos[0]) {
    instance_destroy(other)
    if (life <= 0) {
       instance_destroy()
+      audio_play_sound(snd_explode, 1, false)
    
       var change = o_ring.addScore(points)
       o_ring.addKill(id)

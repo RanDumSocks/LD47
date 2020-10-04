@@ -1,6 +1,9 @@
 {
+  "ConfigValues": {
+    "dev": {"audioGroupId":"{\"name\":\"audiogroup_default\",\"path\":\"audiogroups/audiogroup_default\"}",},
+  },
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.43,
   "preload": false,
   "bitRate": 320,
   "sampleRate": 44100,
@@ -10,14 +13,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mus_main.ogg",
-  "duration": 91.43357,
+  "soundFile": "snd_explode.ogg",
+  "duration": 2.63466,
   "parent": {
-    "name": "music",
-    "path": "folders/audio/music.yy",
+    "name": "sfx",
+    "path": "folders/audio/sfx.yy",
   },
   "resourceVersion": "1.0",
-  "name": "mus_main",
+  "name": "snd_explode",
   "tags": [],
   "resourceType": "GMSound",
 }

@@ -15,6 +15,7 @@ changeState = function(toState) {
    }
    if (state == 1 && toState == 2) {
       o_score.final()
+      audio_play_sound(snd_end, 1, false)
    }
    debugMsg("Changing state to: " + string(toState))
    state = toState
