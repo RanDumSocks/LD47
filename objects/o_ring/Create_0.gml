@@ -6,6 +6,8 @@ ringSurf	= surface_create(room_width, room_height)
 
 plrScore = 0
 plrMult = 1
+kills = 0
+killCombo = 0
 
 circleSize     = 3
 circleSizeDt   = 0
@@ -61,4 +63,23 @@ addScore = function(amt) {
    var scoreChange = amt * plrMult  
    plrScore += scoreChange
    return scoreChange
+}
+
+subScore = function(amt) {
+   var scoreChange = amt * 5
+   plrScore -= scoreChange
+   resetMult()
+   return scoreChange
+}
+
+addKill = function(killId) {
+   kills += 1
+   killCombo += 1
+   plrMult = max(ceil((killCombo + 1) / 10), 1)
+   debugMsg(killCombo)
+}
+
+resetMult = function() {
+   plrMult = 1
+   killCombo = 0
 }

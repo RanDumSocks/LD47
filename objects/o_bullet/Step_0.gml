@@ -30,8 +30,9 @@ glowAlpha = 1;
 #region Murder
 // ---------------------------------------------------------------------------------------------------
 
-if (y + sprite_height < (-2 * (room_height - ring.ref_center.y)) + room_height) {
+if (y + sprite_height < (-2 * (room_height - ring.ref_center.y)) + room_height || y < sprite_height) {
    instance_destroy()
+   o_ring.resetMult()
 }
 
 #endregion

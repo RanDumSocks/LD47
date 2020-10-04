@@ -7,3 +7,7 @@ centered	= true
 hoverable	= false
 strokeWidth = 0
 textColor	= c_white
+
+comboExt = 10
+comboLine = 0
+lineOffset = -9

@@ -3,6 +3,7 @@ if ((ref_center.ring.circleSize * room_width) > pos[0]) {
    instance_destroy(other)
    
    var change = o_ring.addScore(points)
+   o_ring.addKill(id)
 
    var obj = instance_create_layer(0, y, "gui", o_enemyPts)
    obj.draw_x = x

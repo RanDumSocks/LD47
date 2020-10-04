@@ -3,7 +3,7 @@
 // 2 - endscreen
 state = 0
 
-level = 1
+level = 2
 
 totalScore = 0
 
