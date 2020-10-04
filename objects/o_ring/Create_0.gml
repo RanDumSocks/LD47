@@ -7,11 +7,11 @@ ringSurf	= surface_create(room_width, room_height)
 plrScore = 0
 plrMult = 1
 
-circleSize     = 1
+circleSize     = 3
 circleSizeDt   = 0
 
 lineWidth      = 0.004
-defaultColor   = [255, 255, 255]		// READ-ONLY, default grid color
+defaultColor   = [0, 0, 0]		// READ-ONLY, default grid color
 color          = defaultColor
 radius         = 50
 wobble         = 1
@@ -19,10 +19,10 @@ origin         = [0.5, 3.5]
 surfTex        = surface_get_texture(ringSurf)
 uvs            = texture_get_uvs(surfTex)
 
-ref_player = instance_create_layer(0, 0, "Instances", o_player)
+ref_player = instance_create_layer(-100, -100, "Instances", o_player)
 ref_player.ring = id
 
-ref_center = instance_create_layer(0, 0, "Instances", o_center)
+ref_center = instance_create_layer(-100, -100, "Instances", o_center)
 ref_center.ring = id
 
 instance_create_layer(0, 0, "Instances", oc_gridSelector)

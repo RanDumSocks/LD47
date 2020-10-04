@@ -1,7 +1,8 @@
 event_inherited();
 
 draw_x = room_width / 2
-draw_y = 30
+draw_y = -150
+targetDraw_y = 30
 fontSize	= 50
 centered	= true
 hoverable	= false

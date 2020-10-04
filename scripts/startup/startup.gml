@@ -129,9 +129,9 @@ function startup(){
 	}
 
 	// Update views for rm_game
-	var gameCam = camera_create_view(0, 0, idealWidth, idealHeight);
-	camera_set_view_size(gameCam, idealWidth, idealHeight);
-	room_set_camera(rm_game, 0, gameCam);
+	//var gameCam = camera_create_view(0, 0, idealWidth, idealHeight);
+	//camera_set_view_size(gameCam, idealWidth, idealHeight);
+	//room_set_camera(rm_game, 0, gameCam);
 
 	// set window parameters in concordance to width and height
 	surface_resize(application_surface, idealWidth, idealHeight);
