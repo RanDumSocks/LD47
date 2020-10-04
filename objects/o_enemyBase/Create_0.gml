@@ -13,3 +13,7 @@ points = 10
 test = function(posDirAdd) {
    posDir[0] += posDirAdd
 }
+
+init = function() {
+   
+}

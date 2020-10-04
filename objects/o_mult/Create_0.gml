@@ -11,3 +11,5 @@ textColor	= c_white
 comboExt = 10
 comboLine = 0
 lineOffset = -9
+
+targetAlpha = 1

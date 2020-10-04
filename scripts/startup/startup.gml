@@ -9,6 +9,8 @@ function startup(){
 	global.fullscreen = false;
 	global.interpolation = false;
 
+   global.level = 2
+
 	var optionsFound = file_exists("options.sav");
 
 	if (optionsFound) {

@@ -9,7 +9,7 @@ plrMult = 1
 kills = 0
 killCombo = 0
 
-circleSize     = 3
+circleSize     = log2(oc_gameLoop.level) + 1.5
 circleSizeDt   = 0
 
 lineWidth      = 0.004
@@ -76,7 +76,6 @@ addKill = function(killId) {
    kills += 1
    killCombo += 1
    plrMult = max(ceil((killCombo + 1) / 10), 1)
-   debugMsg(killCombo)
 }
 
 resetMult = function() {

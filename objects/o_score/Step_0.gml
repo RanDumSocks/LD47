@@ -9,6 +9,10 @@ if (dispScore >= 0) {
    strokeCol = c_red
 }
 
+alpha += smoothVar(alpha, targetAlpha, 0.2)
+if (alpha <= 0) {
+   oc_gameLoop.nextLevel()
+}
+
 
 event_inherited();
-

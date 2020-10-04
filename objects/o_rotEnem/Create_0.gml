@@ -1,4 +1,7 @@
 event_inherited();
 
-cVol = random(0.4) - 0.2
 points = 15
+
+init = function() {
+   cVol = (random(0.3) - 0.15) / (pos[0] / room_height)
+}
