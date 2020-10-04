@@ -5,7 +5,7 @@ points = 4
 
 life = 4
 
-image_speed = 15
+image_alpha = 0
 
 init = function(length) {
    for (var i = 0; i < length; i++) {

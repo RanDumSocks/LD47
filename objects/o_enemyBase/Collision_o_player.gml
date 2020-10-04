@@ -1,4 +1,4 @@
-if ((ref_center.ring.circleSize * room_width) + (sprite_height / 2) > pos[0]) {
+if ((ref_center.ring.circleSize * room_width) + (sprite_height / 2) > pos[0] && delaySpawn) {
    o_ring.color = [255, 0, 0]
    o_ring.wob(1)
    var change = o_ring.subScore(points * 2)
