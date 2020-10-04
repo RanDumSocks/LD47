@@ -3,7 +3,7 @@ blurDirection		= 0
 xPrev				   = x
 yPrev				   = y
 glowAlpha			= 0
-speedMult         = 1
+speedMult         = 6
 
 particleSurf = surface_create(sprite_width + (2 * blurAmount), sprite_height + (2 * blurAmount));
 

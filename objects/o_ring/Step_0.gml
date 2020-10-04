@@ -14,7 +14,7 @@ if (wobble < 1) {
    wobble = 1  
 }
 
-changeSize(-global.second / 100)
+changeSize(-global.second / 20)
 
 if (circleSize <= -0.1) {
    circleSize = -0.1  

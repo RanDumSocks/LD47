@@ -3,4 +3,5 @@ function spawnEnemy(posR, posT, object, centerObj){
    obj.pos = [posR, posT]
    obj.ref_center = centerObj
    obj.init()
+   return obj
 }

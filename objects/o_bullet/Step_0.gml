@@ -1,4 +1,4 @@
-y -= (global.second * speedMult * 300) + 20
+y -= (global.second * speedMult * 300)
 speedMult += global.second * 15
 
 // ---------------------------------------------------------------------------------------------------

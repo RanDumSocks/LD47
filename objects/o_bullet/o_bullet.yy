@@ -22,8 +22,8 @@
   "physicsShapePoints": [
     {"x":0.0,"y":0.0,},
     {"x":5.0,"y":0.0,},
-    {"x":5.0,"y":35.0,},
-    {"x":0.0,"y":35.0,},
+    {"x":5.0,"y":164.0,},
+    {"x":0.0,"y":164.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"o_bullet","path":"objects/o_bullet/o_bullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},

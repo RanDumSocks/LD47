@@ -75,10 +75,12 @@ subScore = function(amt) {
 addKill = function(killId) {
    kills += 1
    killCombo += 1
-   plrMult = max(ceil((killCombo + 1) / 10), 1)
+   plrMult = max(ceil((killCombo + 1) / 10), 1) + ((global.level - 2) / 10)
 }
 
 resetMult = function() {
-   plrMult = 1
+   plrMult = 1 + ((global.level - 2) / 10)
    killCombo = 0
 }
+
+resetMult()

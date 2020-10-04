@@ -8,7 +8,7 @@ if ((ref_center.ring.circleSize * room_width) > pos[0]) {
    var obj = instance_create_layer(0, y, "gui", o_enemyPts)
    obj.draw_x = x
    obj.draw_y = y
-   obj.drawString = change
+   obj.drawString = floor(change)
 }
 
  /*

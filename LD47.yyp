@@ -1,9 +1,12 @@
 {
   "resources": [
     {"id":{"name":"oi_drawGridText","path":"objects/oi_drawGridText/oi_drawGridText.yy",},"order":0,},
+    {"id":{"name":"mus_main","path":"sounds/mus_main/mus_main.yy",},"order":1,},
     {"id":{"name":"sdr_gridSelector","path":"shaders/sdr_gridSelector/sdr_gridSelector.yy",},"order":3,},
     {"id":{"name":"o_ring","path":"objects/o_ring/o_ring.yy",},"order":10,},
+    {"id":{"name":"o_musicController","path":"objects/o_musicController/o_musicController.yy",},"order":11,},
     {"id":{"name":"sdr_ring","path":"shaders/sdr_ring/sdr_ring.yy",},"order":2,},
+    {"id":{"name":"mus_intro","path":"sounds/mus_intro/mus_intro.yy",},"order":0,},
     {"id":{"name":"spawnScripts","path":"scripts/spawnScripts/spawnScripts.yy",},"order":2,},
     {"id":{"name":"sdr_outline","path":"shaders/sdr_outline/sdr_outline.yy",},"order":1,},
     {"id":{"name":"o_enemyBase","path":"objects/o_enemyBase/o_enemyBase.yy",},"order":0,},
@@ -18,7 +21,9 @@
     {"id":{"name":"oc_gameLoop","path":"objects/oc_gameLoop/oc_gameLoop.yy",},"order":8,},
     {"id":{"name":"startup","path":"scripts/startup/startup.yy",},"order":1,},
     {"id":{"name":"o_mult","path":"objects/o_mult/o_mult.yy",},"order":1,},
+    {"id":{"name":"o_wall","path":"objects/o_wall/o_wall.yy",},"order":3,},
     {"id":{"name":"sp_eye","path":"sprites/sp_eye/sp_eye.yy",},"order":4,},
+    {"id":{"name":"sp_wall","path":"sprites/sp_wall/sp_wall.yy",},"order":7,},
     {"id":{"name":"oc_gridSelector","path":"objects/oc_gridSelector/oc_gridSelector.yy",},"order":2,},
     {"id":{"name":"o_score","path":"objects/o_score/o_score.yy",},"order":0,},
     {"id":{"name":"sdr_motionBlur","path":"shaders/sdr_motionBlur/sdr_motionBlur.yy",},"order":0,},
@@ -65,6 +70,8 @@
     {"folderPath":"folders/fonts.yy","order":5,"resourceVersion":"1.0","name":"fonts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/rooms/game/text.yy","order":7,"resourceVersion":"1.0","name":"text","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/rooms/game/intro.yy","order":9,"resourceVersion":"1.0","name":"intro","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/audio.yy","order":6,"resourceVersion":"1.0","name":"audio","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/audio/music.yy","order":1,"resourceVersion":"1.0","name":"music","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

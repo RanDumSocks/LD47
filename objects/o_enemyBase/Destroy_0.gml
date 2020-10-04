@@ -3,4 +3,5 @@ for (var i = irandom(15) + 5; i >= 0; i--) {
    derb.pos[0] = pos[0]
    derb.pos[1] = pos[1]
    derb.ref_center = ref_center
+   derb.init()
 }
